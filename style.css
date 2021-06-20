@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  background: black;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.cover {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nav-images img {
+  height: 250px;
+  opacity: 0.8;
+}
+
+.nav-images img:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+nav {
+  background: white;
+  z-index: 2;
+  width: 40%;
+  height: 20%;
+  color: grey;
+}
+
+.nav-btn {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-btn:hover {
+  opacity: 1;
+  transition: 0.5s;
+  font-size: 19px;
+}
+
+.nav-links {
+  cursor: pointer;
+}
+
+.nav-closed {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  width: 40%;
+  position: absolute;
+}
+
+.nav-closed ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-open {
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  top: 20%;
+  background-color: white;
+  display: flex;
+  color: #363636;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  pointer-events: none;
+}
+
+.clothing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+.clothing h2 {
+  font-size: 50px;
+  color: #73cfeb;
+}
+
+.clothing ul li {
+  padding-bottom: 10px;
+}
+
+.clothing ul {
+  list-style: none;
+  color: grey;
+}
+
+.clothing ul li a {
+  text-decoration: none;
+  color: #363636;
+}
+
+.nav-images {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.about {
+  color: grey;
+  display: none;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 0 20px;
+  opacity: 0;
+  position: absolute;
+}
+
+.contact {
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+}
+
+.follow {
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.social {
+  width: 100px;
+  height: 100px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
